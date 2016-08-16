@@ -24,7 +24,7 @@
    <div class="col-lg-6 well">
     <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
     <p><%= recipe.summary %></p>
-    <% if recipe.style.any? %>
+    <% if recipe.styles.any? %>
     <p>Style: <%= render recipe.styles %></p>
     <% end %>
     <% if recipe.ingredients.any? %>
