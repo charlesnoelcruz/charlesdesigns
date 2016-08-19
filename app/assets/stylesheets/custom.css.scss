@@ -5,16 +5,16 @@ $navbar-default-color: $light-orange;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+    font-family: "Avenir","Lucida Grande","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 #logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
     float: left;
     margin-left: 10px;
     font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -1px;
-    padding-top: 9px;
     font-weight: bold;
 }
 
@@ -23,21 +23,46 @@ $navbar-default-color: $light-orange;
     text-decoration: none;
 }
 
-body {
-    padding-top: 80px;
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
 }
 
-.nav_item {
-    margin-left: 25px;
-    float: left;
-    margin-top: 20px;
+@media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu {
+        background-color: #fff;
+    }
 }
 
-.nav_ul_item {
-    padding-left: 25px;
-    float: left;
-    margin-top: 20px;
+.navbar-nav > li > a{
+    color: #fff;
 }
+
+.navbar-bg {
+    background-color: #298ae3;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #2b99f0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #2b99f0;
+    color: #fff;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #2b99f0;
+}
+
+// a {
+//     color: #fff;
+// }
 
 .center {
     text-align: center;
